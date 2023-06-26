@@ -1,0 +1,10 @@
+/* write css for the h1 tag  */
+/* make it center */
+h1 {
+  text-align: center;
+ font-weight: bold;
+ font-size:100px;
+  color: orangered;
+  margin-top: 100px;
+}
+
