@@ -1,7 +1,7 @@
-package com.example.patienceManagementSystem.authentication.jwtConfig;
+package com.example.patientManagementSystem.authentication.jwtConfig;
 
 
-import com.example.patienceManagementSystem.authentication.model.User;
+import com.example.patientManagementSystem.authentication.model.User;
 
 import java.util.Map;
 

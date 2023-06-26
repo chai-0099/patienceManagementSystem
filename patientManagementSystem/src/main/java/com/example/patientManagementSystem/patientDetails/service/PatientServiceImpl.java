@@ -1,9 +1,9 @@
-package com.example.patienceManagementSystem.patientDetails.service;
+package com.example.patientManagementSystem.patientDetails.service;
 
-import com.example.patienceManagementSystem.patientDetails.exception.PatientAlreadyExists;
-import com.example.patienceManagementSystem.patientDetails.exception.PatientNotFoundException;
-import com.example.patienceManagementSystem.patientDetails.model.Patient;
-import com.example.patienceManagementSystem.patientDetails.repository.PatientRepository;
+import com.example.patientManagementSystem.patientDetails.exception.PatientAlreadyExists;
+import com.example.patientManagementSystem.patientDetails.exception.PatientNotFoundException;
+import com.example.patientManagementSystem.patientDetails.model.Patient;
+import com.example.patientManagementSystem.patientDetails.repository.PatientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.io.IOException;

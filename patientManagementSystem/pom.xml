@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>patienceManagementSystem</artifactId>
+	<artifactId>patientManagementSystem</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>patienceManagementSystem</name>
-	<description> Patience Management System project for Spring Boot</description>
+	<name>patientManagementSystem</name>
+	<description> Patient Management System project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>

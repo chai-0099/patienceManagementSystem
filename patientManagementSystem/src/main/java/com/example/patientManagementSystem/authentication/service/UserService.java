@@ -1,8 +1,8 @@
-package com.example.patienceManagementSystem.authentication.service;
+package com.example.patientManagementSystem.authentication.service;
 
-import com.example.patienceManagementSystem.authentication.exception.UserAlreadyExistsException;
-import com.example.patienceManagementSystem.authentication.exception.UserNotFoundException;
-import com.example.patienceManagementSystem.authentication.model.User;
+import com.example.patientManagementSystem.authentication.exception.UserAlreadyExistsException;
+import com.example.patientManagementSystem.authentication.exception.UserNotFoundException;
+import com.example.patientManagementSystem.authentication.model.User;
 
 import java.util.List;
 

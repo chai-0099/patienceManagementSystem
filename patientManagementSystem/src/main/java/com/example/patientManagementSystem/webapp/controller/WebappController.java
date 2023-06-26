@@ -1,4 +1,4 @@
-package com.example.patienceManagementSystem.webapp.controller;
+package com.example.patientManagementSystem.webapp.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

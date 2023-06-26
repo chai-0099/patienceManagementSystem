@@ -1,9 +1,9 @@
-package com.example.patienceManagementSystem.authentication.service;
+package com.example.patientManagementSystem.authentication.service;
 
-import com.example.patienceManagementSystem.authentication.exception.UserAlreadyExistsException;
-import com.example.patienceManagementSystem.authentication.exception.UserNotFoundException;
-import com.example.patienceManagementSystem.authentication.model.User;
-import com.example.patienceManagementSystem.authentication.repository.UserRepository;
+import com.example.patientManagementSystem.authentication.exception.UserAlreadyExistsException;
+import com.example.patientManagementSystem.authentication.exception.UserNotFoundException;
+import com.example.patientManagementSystem.authentication.model.User;
+import com.example.patientManagementSystem.authentication.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;

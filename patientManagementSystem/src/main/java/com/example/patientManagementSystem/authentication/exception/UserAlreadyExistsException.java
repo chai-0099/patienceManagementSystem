@@ -1,4 +1,4 @@
-package com.example.patienceManagementSystem.authentication.exception;
+package com.example.patientManagementSystem.authentication.exception;
 
 public class UserAlreadyExistsException extends Exception{
     private String message;

@@ -1,10 +1,10 @@
-package com.example.patienceManagementSystem.authentication.controller;
+package com.example.patientManagementSystem.authentication.controller;
 
-import com.example.patienceManagementSystem.authentication.exception.UserAlreadyExistsException;
-import com.example.patienceManagementSystem.authentication.exception.UserNotFoundException;
-import com.example.patienceManagementSystem.authentication.jwtConfig.SecurityTokenGenerator;
-import com.example.patienceManagementSystem.authentication.model.User;
-import com.example.patienceManagementSystem.authentication.service.UserService;
+import com.example.patientManagementSystem.authentication.exception.UserAlreadyExistsException;
+import com.example.patientManagementSystem.authentication.exception.UserNotFoundException;
+import com.example.patientManagementSystem.authentication.jwtConfig.SecurityTokenGenerator;
+import com.example.patientManagementSystem.authentication.model.User;
+import com.example.patientManagementSystem.authentication.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

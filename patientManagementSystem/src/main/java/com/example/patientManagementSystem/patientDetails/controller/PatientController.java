@@ -1,9 +1,9 @@
-package com.example.patienceManagementSystem.patientDetails.controller;
+package com.example.patientManagementSystem.patientDetails.controller;
 
 
-import com.example.patienceManagementSystem.patientDetails.exception.PatientAlreadyExists;
-import com.example.patienceManagementSystem.patientDetails.model.Patient;
-import com.example.patienceManagementSystem.patientDetails.service.PatientService;
+import com.example.patientManagementSystem.patientDetails.exception.PatientAlreadyExists;
+import com.example.patientManagementSystem.patientDetails.model.Patient;
+import com.example.patientManagementSystem.patientDetails.service.PatientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

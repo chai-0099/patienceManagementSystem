@@ -1,4 +1,4 @@
-package com.example.patienceManagementSystem.authentication.model;
+package com.example.patientManagementSystem.authentication.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

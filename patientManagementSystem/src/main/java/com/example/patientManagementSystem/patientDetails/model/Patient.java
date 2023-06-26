@@ -1,4 +1,4 @@
-package com.example.patienceManagementSystem.patientDetails.model;
+package com.example.patientManagementSystem.patientDetails.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

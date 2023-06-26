@@ -1,4 +1,4 @@
-package com.example.patienceManagementSystem.patientDetails.exception;
+package com.example.patientManagementSystem.patientDetails.exception;
 
 public class PatientNotFoundException extends Exception{
     private String message;

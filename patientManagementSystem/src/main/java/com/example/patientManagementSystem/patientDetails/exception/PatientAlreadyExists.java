@@ -1,4 +1,4 @@
-package com.example.patienceManagementSystem.patientDetails.exception;
+package com.example.patientManagementSystem.patientDetails.exception;
 
 public class PatientAlreadyExists extends Exception{
     private String message;
