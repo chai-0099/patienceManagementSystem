@@ -1,10 +1,24 @@
-/* write css for the h1 tag  */
-/* make it center */
-h1 {
+.header{
+  font-size: 60px;
+  font-weight: bold;
   text-align: center;
- font-weight: bold;
- font-size:100px;
-  color: orangered;
-  margin-top: 100px;
+  padding-top:100px;
+  
+}
+.container{
+  background-color: rgb(117, 189, 240);
+  height: 95%;
+  width: 100%;
 }
 
+button{
+  height: 100%;
+  width:35%;
+  font-size: larger;
+  margin: auto;
+ 
+}
+.button{
+  align-items: center;
+  margin-top: 300px;
+}

@@ -1,6 +1,5 @@
-<!--div tag with tile-->
 <div class="header">
-  <h3>myBank</h3>
+  <p>Patient Management System</p>
 </div>
 <!--div with a mat card-->
 <div class="mat-card">
@@ -36,20 +35,14 @@
           </mat-form-field>
         </p>
       </div>
-        <!--mat button-->
+      <div style="display: flex; justify-content: center;">
+      <a routerLink="/register" style="text-align: center; padding-bottom: 10px;">Don't have an Account ? Register Here</a>
+    </div>
         <div class="mat-button">
-        <button mat-raised-button color="primary" type="submit" style="width: 20%;">Login</button>
+        <button mat-raised-button color="primary" type="submit" style="width: 20%;" routerLink="/home">Login</button>
         </div>
-        <a routerLink="/register" style="justify-content: center;">Don't have an Account ? Register Here</a>
       </form>
     </mat-card-content>
   </div>
   </mat-card>
-
-  <!--simple footer with copyright tag-->
-  <div class="footer">
-    <mat-card-footer>
-      <p class="footer-content">&copy; 2021 myBank. All rights reserved.</p>
-    </mat-card-footer>
-  </div>
 

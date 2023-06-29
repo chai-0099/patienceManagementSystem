@@ -18,6 +18,15 @@ import { MatIconModule} from '@angular/material/icon';
 import { NgIf } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { AddPatientComponent } from './add-patient/add-patient/add-patient.component';
+import { MatSelectModule } from '@angular/material/select';
+import { UpdateProfileComponent } from './update-profile/update-profile.component';
+import { ProfileComponent } from './profile/profile.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+
+
 
 
 @NgModule({
@@ -25,8 +34,14 @@ import { RegisterComponent } from './register/register.component';
     AppComponent,
     LoginComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
+    DashboardComponent,
+    AddPatientComponent,
+    UpdateProfileComponent,
+ProfileComponent,
+ToolbarComponent
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -44,7 +59,10 @@ import { RegisterComponent } from './register/register.component';
     MatInputModule, 
     FormsModule,
     HttpClientModule,
-    NgIf
+    NgIf,
+    MatDialogModule,
+    ReactiveFormsModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

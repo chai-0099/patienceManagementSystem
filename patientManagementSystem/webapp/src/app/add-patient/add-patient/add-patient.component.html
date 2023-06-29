@@ -1,0 +1,75 @@
+<app-toolbar></app-toolbar>
+<div class="conatiner">
+<div>
+  <mat-card>
+    <h2>Add Patient</h2>
+    <form (ngSubmit)="addPatient()">
+      <mat-card-content> 
+        <div class="content">
+          <mat-form-field appearance="fill">
+            <mat-label>Full Name</mat-label>
+            <input matInput [(ngModel)]="patient.name" name="name" required>
+          </mat-form-field>
+        </div>
+        <div class="content">
+          <mat-form-field appearance="fill">
+            <mat-label>Age</mat-label>
+            <input matInput [(ngModel)]="patient.age" name="age" required>
+          </mat-form-field>
+        </div>
+        <div fxLayout="row" fxLayoutGap="20px">
+        <mat-form-field appearance="fill">
+          <mat-label>Gender</mat-label>
+          <mat-select [(ngModel)]="patient.gender" name="gender" required>
+            <mat-option value="Male">Male</mat-option>
+            <mat-option value="Female">Female</mat-option>
+            <mat-option value="Others">Other</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>BLood Group</mat-label>
+          <mat-select [(ngModel)]="patient.bloodGroup" name="bloodGroup" required>
+            <mat-option value="A+">A+</mat-option>
+            <mat-option value="A-">A-</mat-option>
+            <mat-option value="B+">B+</mat-option>
+            <mat-option value="B-">B-</mat-option> 
+            <mat-option value="AB+">AB+</mat-option> 
+            <mat-option value="AB-">AB-</mat-option>
+            <mat-option value="O+">O+</mat-option>
+            <mat-option value="O-">O-</mat-option> 
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div fxLayout="row" fxLayoutGap="10px">
+        <div class="number">
+          <mat-form-field appearance="fill">
+            <mat-label>Contact Number</mat-label>
+            <input matInput [(ngModel)]="patient.contactNumber" name="contactNumber" required>
+          </mat-form-field>
+        </div>
+        <div class="email">
+          <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput [(ngModel)]="patient.email" name="email" required>
+          </mat-form-field>
+        </div>
+      </div>
+        <div class="content">
+          <mat-form-field appearance="fill">
+            <mat-label>Address</mat-label>
+            <input matInput [(ngModel)]="patient.address" name="address" required>
+          </mat-form-field>
+        </div>
+        <div class="description">
+          <mat-form-field class="description" >
+            <mat-label>Patient's Medical History</mat-label>
+            <textarea matInput [(ngModel)]="patient.description" name="description" required></textarea>
+          </mat-form-field>
+        </div>
+      <button mat-raised-button color="primary" type="submit">Add Patient</button>
+    </mat-card-content>
+    </form>
+  </mat-card>
+  </div>
+</div>
+  

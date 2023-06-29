@@ -43,8 +43,8 @@ public class PatientController {
     @GetMapping("/patient/{id}")
     public ResponseEntity<?> getPatientById(@PathVariable String id) throws IOException {
         try {
-            patientService.getPatientById(id);
-            responseEntity = ResponseEntity.ok(patientService.getPatientById(id));
+            patientService.getPatientById(String.valueOf(id));
+            responseEntity = ResponseEntity.ok(patientService.getPatientById(String.valueOf(id)));
         } catch (Exception e) {
             responseEntity = ResponseEntity.badRequest().body(e.getMessage());
         }
@@ -76,14 +76,19 @@ public class PatientController {
     }
 
     //Add Delete Mapping to deletePatients the required http methods with proper mapping and exception handling
+
     @DeleteMapping("/patient/{id}")
     public ResponseEntity<?> deletePatient(@PathVariable String id) throws IOException {
         try {
-            ResponseEntity responseEntity = ResponseEntity.ok(patientService.deletePatient(id));
+            boolean isDeleted = patientService.deletePatient(id);
+            if (isDeleted) {
+                return ResponseEntity.ok().build();
+            } else {
+                return ResponseEntity.notFound().build();
+            }
         } catch (Exception e) {
-            responseEntity = ResponseEntity.badRequest().body(e.getMessage());
+            return ResponseEntity.badRequest().body(e.getMessage());
         }
-        return responseEntity;
-    }
 
+    }
 }

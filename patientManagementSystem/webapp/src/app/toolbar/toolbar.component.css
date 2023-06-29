@@ -1,0 +1,10 @@
+
+/*CSS to toolbar to have height 5%, width 100%, backroud color orngeand font color white and font size 600*/
+.mat-toolbar-row{
+    height: 5%;
+    width: 100%;
+    background-color: rgb(104, 138, 241);
+    color: white;
+    font-size: 600;
+    
+}

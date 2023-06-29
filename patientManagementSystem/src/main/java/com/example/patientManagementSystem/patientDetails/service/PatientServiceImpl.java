@@ -24,9 +24,10 @@ public class PatientServiceImpl implements PatientService {
     //Implements the method of addPatient from PatientService
     @Override
     public Patient addPatient(Patient patient) throws PatientAlreadyExists {
-        if(patientRepository.existsById(patient.getId())){
+        if (patientRepository.existsById(String.valueOf(patient.getId()))) {
             throw new PatientAlreadyExists("Patient Already Exists");
         }
+
         Patient savedPatient = patientRepository.save(patient);
         return savedPatient;
     }

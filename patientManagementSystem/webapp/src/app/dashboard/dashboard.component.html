@@ -1,0 +1,29 @@
+<app-toolbar></app-toolbar>
+  <div class="container">
+  <!-- div display flex as mat card column to iterate among the columns of patients -->
+  <div fxLayout="row wrap" fxLayoutGap="20px grid" fxLayoutAlign="center center" fxLayout.xs="column" fxLayoutAlign.xs="center center" fxLayoutGap.xs="10px">
+    <div class="mat-card" fxFlex="85%" fxFlex.xs="100%">
+      <mat-card *ngFor="let patient of patient" class="patient-card">
+        <mat-card-header style="display: flex; align-items: center;">
+          <div class="header-title">
+            Id: {{ patient.id }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Name:
+            {{ patient.name }} &nbsp;
+          </div>
+          <div class="icon">
+          <mat-card-actions>
+            <button mat-icon-button color="primary" matTooltip="View Profile" (click)="getPatientById(patient.id)">
+              <mat-icon>visibility</mat-icon>
+            </button>
+            <button mat-icon-button color="accent" matTooltip="Update Profile" (click)="updatePatient(patient.id, patient)" >
+              <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-icon-button color="warn" matTooltip="Delete Profile" (click)="deletePatient(patient.id)">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </mat-card-actions>
+            </div>
+        </mat-card-header>
+      </mat-card>
+    </div>
+  </div>
+</div>

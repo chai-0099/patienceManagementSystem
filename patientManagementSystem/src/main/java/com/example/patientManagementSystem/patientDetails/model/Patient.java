@@ -15,9 +15,15 @@ public class Patient {
 
     //Basic entity of the patient details with id as primary key, name, gender, address, contact number, email
     @Id
-    private String id;
+    private String  id;
     private String name;
     private Gender gender;
+    private int age;
+    private String bloodGroup;
     private String contactNumber;
     private String email;
+    private String address;
+    private String description;
+
+
 }
